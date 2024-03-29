@@ -19,7 +19,7 @@ var person2: Person = {
     // move() 없앨 경우 ...
     // 'move' 속성이 '{ name: string; age: number; }' 형식에 없지만 
     // 'Person' 형식에서 필수입니다.
-    move: () => {} 
+    move: () => {}
 }
 
 var person3: Person = {
