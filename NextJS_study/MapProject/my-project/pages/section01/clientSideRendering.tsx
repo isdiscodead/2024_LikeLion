@@ -1,5 +1,10 @@
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const NoSSR = dynamic(() => import('../../components/section01/NoSSR'), {
+    ssr: false,
+});
 
 const Example: NextPage = () => {
     const [data, setData] = useState(0);
