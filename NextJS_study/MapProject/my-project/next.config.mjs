@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+        domains: ['lecture-1.vercel.app'],
+    },
+};
 
 export default nextConfig;
