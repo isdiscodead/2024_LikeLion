@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./styles/header.module.css";
+import styles from "../../styles/header.module.scss";
 import { Fragment } from "react";
 import HeaderComponent from "@/components/common/Header";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import { VscFeedback } from "react-icons/vsc";
 
 export default function FeedBack() {
   return (
-    <Fragment>
+    <>
       <HeaderComponent rightElements={[
         <button onClick={() => {
           alert("복사")
@@ -23,6 +23,6 @@ export default function FeedBack() {
         </Link>
       ]}/>
       <main></main>
-    </Fragment>
+    </>
   );
 }
