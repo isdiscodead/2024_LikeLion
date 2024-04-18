@@ -1,4 +1,4 @@
-:root {
+ :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -83,16 +83,14 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base { /* 전역 상태 */
+  #__next { /* nextjs 자체 생성 DOM -> box 요소 생성 x, 접근성 tree에서도 제거 */
+    display: contents;
+  }
 }
 
 a {
